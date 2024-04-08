@@ -52,8 +52,8 @@ const Home = () => {
     <div className='homeContainer'>
       <div>
         <button onClick={handleClick}>Add Github</button>
-        <button disabled={data.theme.length === 0} onClick={() => navigate("/theme")}>Theme Page </button>
-        <button disabled={data.theme.length === 0} onClick={() => navigate("/template")}>Template Page </button>
+        <button disabled={data.theme.length === 0} onClick={() => navigate("/theme")} >Theme Page </button>
+        <button disabled={data.theme.length === 0} onClick={() => navigate("/template")} >Template Page </button>
         <h2>Total repos selected - {data.theme.length}</h2>
       </div>
       <div>
