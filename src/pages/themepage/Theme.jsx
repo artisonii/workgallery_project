@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { DataContext } from '../../context/DataContext'
 const Theme = () => {
-    const { data } = useContext(DataContext)
+    const { data, setData } = useContext(DataContext)
     const navigate = useNavigate()
     const handleClick = (e) => {
         const val = data.theme.filter((ele) => {
